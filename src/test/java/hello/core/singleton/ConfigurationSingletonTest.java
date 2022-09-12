@@ -13,7 +13,7 @@ import static org.assertj.core.api.Assertions.*;
 public class ConfigurationSingletonTest {
 
     @Test
-    void configurationTset() {
+    void configurationTest() {
         AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
 
         MemberServiceImpl memberService = ac.getBean("memberService", MemberServiceImpl.class);
